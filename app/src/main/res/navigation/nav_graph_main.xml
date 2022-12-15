@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.smg.animequiz.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_watchlistFragment"
+            app:destination="@id/watchlistFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_gameModeFragment"
+            app:destination="@id/gameModeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/watchlistFragment"
+        android:name="com.smg.animequiz.WatchlistFragment"
+        android:label="WatchlistFragment" >
+        <action
+            android:id="@+id/action_watchlistFragment_to_aboutAnimeFragment"
+            app:destination="@id/aboutAnimeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameModeFragment"
+        android:name="com.smg.animequiz.GameModeFragment"
+        android:label="fragment_game_mode"
+        tools:layout="@layout/fragment_game_mode" >
+        <action
+            android:id="@+id/action_gameModeFragment_to_quizFragment2"
+            app:destination="@id/quizFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizFragment2"
+        android:name="com.smg.animequiz.QuizFragment"
+        android:label="QuizFragment" >
+        <action
+            android:id="@+id/action_quizFragment2_to_aboutAnimeFragment"
+            app:destination="@id/aboutAnimeFragment" />
+        <action
+            android:id="@+id/action_quizFragment2_to_completeFragment"
+            app:destination="@id/completeFragment" />
+        <argument
+            android:name="Year"
+            app:argType="integer"
+            android:defaultValue="1990" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutAnimeFragment"
+        android:name="com.smg.animequiz.AboutAnimeFragment"
+        android:label="AboutAnimeFragment" >
+        <action
+            android:id="@+id/action_aboutAnimeFragment_to_quizFragment2"
+            app:destination="@id/quizFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/completeFragment"
+        android:name="com.smg.animequiz.CompleteFragment"
+        android:label="CompleteFragment" >
+        <action
+            android:id="@+id/action_completeFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>

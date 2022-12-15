@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="251dp"
+        android:layout_height="374dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:padding="4dp"
+        android:src="@drawable/totoro" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/button_start_text" />
+    <Button
+        android:id="@+id/buttonWatchList"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/button_watchlist_text"
+        />
+</LinearLayout>
+
+

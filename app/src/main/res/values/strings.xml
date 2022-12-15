@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AnimeQuiz</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button_start_text">Начать</string>
+    <string name="button_watchlist_text">Сохраненные тайтлы</string>
+    <string name="text_pick_year">Выберете период</string>
+</resources>

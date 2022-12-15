@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    >
+    <ImageView
+        android:id="@+id/idImageViewAboutPoster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/idTextViewTitleName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:textStyle="bold"
+        android:text="Название: Моб Психо 100 3"/>
+    <TextView
+        android:id="@+id/idTextViewRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:text="Рейтинг: 8"/>
+    <TextView
+        android:id="@+id/idTextViewYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:text="Год выпуска: 2022"/>
+
+    <TextView
+        android:id="@+id/idTextViewDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:text="Описание: \nКазалось бы, иметь сверхспособности — мечта едва ли не каждого человека на Земле, однако главный герой этой истории такой ход мыслей не поддерживает. Ах да, знакомьтесь, это Шигэо Кагэяма, он же Моб, всего лишь восьмиклассник, с детства обладающий экстрасенсорными способностями."
+        android:textAlignment="viewStart"
+        android:maxLines="4"
+        />
+
+    <Button
+        android:id="@+id/idButtonAddToWatchlist"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:textSize="14sp"
+        android:background="@color/black"
+        android:text="Добавить в вочлист" />
+
+    <Button
+        android:id="@+id/idButtonAboutBack"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Назад" />
+
+
+</LinearLayout>
